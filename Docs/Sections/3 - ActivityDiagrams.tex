@@ -1,28 +1,28 @@
 \chapter{\bf{Activity Diagrams}}
 
-\section{Apertura e Chiusura Cancello   [Scenario 1]}
-Questo scenario, presentato in figura \ref{scenario1}, descrive passo dopo passo le azioni che l’utente compie per aprire e chiudere il cancello, dalle fasi iniziali di richiesta tramite il pulsante B1, fino al feedback visivo che conferma l'operazione completata. Nel seguito verrà presentato il flusso di azioni associato allo scenario corrente:
+\section{Apertura e Chiusura Cancello [Scenario 1]}
+Questo scenario, illustrato in figura \ref{scenario1}, descrive in sequenza le azioni che l’utente compie per aprire e chiudere il cancello, dalle fasi iniziali di richiesta tramite il pulsante B1, fino al feedback visivo che conferma l'operazione completata.
+Di seguito vengono presentati i flussi di azioni associati allo scenario corrente. \\
 
-\noindent Apertura del cancello:
+\noindent Apertura del Cancello:
 \begin{enumerate}
-    \item L’utente decide di aprire il cancello e si avvicina ad esso.
-    \item Per avviare il processo di apertura, l’utente preme il pulsante B1.
-    \item Il sistema rileva che il pulsante B1 è stato premuto.
-    \item Il sistema verifica che il cancello sia chiuso o in chiusura.
-    \item Il sistema avvia il processo di apertura del cancello.
-    \item Durante l'apertura, il dispositivo fornisce un feedback visivo attivando il lampeggiamento del LED giallo con frequenza 0.5 Hz.
-    \item Una volta completata l'apertura, tutti i LED (giallo, rosso e verde) si accendono per indicare la completa apertura del cancello.
+    \item L’utente decide di aprire il cancello e si avvicina ad esso;
+    \item Per avviare il processo di apertura, l’utente preme il pulsante B1;
+    \item Il sistema rileva che il pulsante B1 è stato premuto;
+    \item Il sistema verifica che il cancello sia chiuso o in chiusura;
+    \item Il sistema avvia il processo di apertura del cancello;
+    \item Durante l'apertura, il dispositivo fornisce un feedback visivo attivando il lampeggiamento del LED giallo con frequenza 0.5 Hz;
+    \item Una volta completata l'apertura, tutti i LED (giallo, rosso e verde) si accendono staticamente per indicare la completa apertura del cancello.
 \end{enumerate}
 
-
-\noindent Chiusura del cancello:
+\noindent \\ Chiusura del Cancello:
 \begin{enumerate}
-    \item L’utente decide di chiudere il cancello e si avvicina ad esso.
-    \item Per avviare il processo di chiusura, l’utente preme il pulsante B1.
-    \item Il sistema rileva che il pulsante B1 è stato premuto.
-    \item Il sistema verifica che il cancello sia aperto o in apertura.
-    \item Il sistema avvia il processo di chiusura del cancello.
-    \item Durante la chiusura, il dispositivo fornisce un feedback visivo attivando il lampeggiamento del LED giallo con frequenza 0.5 Hz.
+    \item L’utente decide di chiudere il cancello e si avvicina ad esso;
+    \item Per avviare il processo di chiusura, l’utente preme il pulsante B1;
+    \item Il sistema rileva che il pulsante B1 è stato premuto;
+    \item Il sistema verifica che il cancello sia aperto o in apertura;
+    \item Il sistema avvia il processo di chiusura del cancello;
+    \item Durante la chiusura, il dispositivo fornisce un feedback visivo attivando il lampeggiamento del LED giallo con frequenza 0.5 Hz;
     \item Una volta completata la chiusura, tutti i LED (giallo, rosso e verde) si spengono per indicare la completa chiusura del cancello.
 \end{enumerate}
 
@@ -36,30 +36,40 @@ Questo scenario, presentato in figura \ref{scenario1}, descrive passo dopo passo
 
 
 \section{Regolazioni [Scenario 2]}
-Questo scenario, presentato in figura \ref{scenario2}, descrive passo dopo passo le azioni che l’utente compie per regolare il tempo di chiusura automatica del cancello. Nel seguito verrà presentato il flusso di azioni associato allo scenario corrente:
+\noindent Questo scenario è suddiviso in due parti, entrambe ricostruite in figura \ref{scenario2}. \\
 
-\noindent Regolazione tempo di chiusura automatica:
+La prima parte dello scenario descrive sequenzialmente le azioni che l’utente compie per regolare il tempo di chiusura automatica del cancello.
+Di seguito viene presentato il flusso di azioni associato alla sezione corrente. \\
+
+\noindent Regolazione Tempo di Chiusura Automatica:
 
 \begin{enumerate}
-\item L’utente decide di regolare il tempo di chiusura automatica del cancello.
-\item L’utente si avvicina al cancello chiuso.
-\item Per avviare il processo di regolazione, l’utente preme il pulsante B2.
-\item Il sistema rileva che il pulsante B2 è stato premuto.
-\item Se il tempo di chiusura automatica è inferiore a 120 secondi, ogni pressione del pulsante B2 aumenta il tempo di 10 secondi.
-\item Se il tempo di chiusura automatica è già a 120 secondi, premendo nuovamente B2 il tempo viene riportato a 10 secondi.
+    \item L’utente decide di regolare il tempo di chiusura automatica del cancello;
+    \item L’utente si avvicina al cancello chiuso;
+    \item Per avviare il processo di regolazione, l’utente preme il pulsante B2;
+    \item Il sistema rileva che il pulsante B2 è stato premuto;
+    \item Il tempo di chiusura automatica viene così gestito:
+    
+    \begin{enumerate}
+        \item Se il tempo di chiusura automatica è inferiore a 120 secondi, ogni pressione del pulsante B2 aumenta il tempo di 10 secondi;
+        \item Se il tempo di chiusura automatica è già a 120 secondi, premendo nuovamente B2 il tempo viene riportato a 10 secondi. \\
+    \end{enumerate}
 \end{enumerate}
 
-Questo scenario descrive passo dopo passo le azioni che l’utente compie per regolare la durata delle fasi di apertura e chiusura del cancello. Per questioni di semplicità, il diagramma riguardante quest'attività non è stato riportato poiché identico al precedente.
+La seconda parte descrive, invece, le azioni che l’utente compie per regolare la durata delle fasi di apertura e chiusura del cancello. \\
 
 \noindent Regolazione Tempo di Lavoro:
 
 \begin{enumerate}
-\item L’utente decide di regolare la durata delle fasi di apertura e chiusura del cancello.
-\item L’utente si avvicina al cancello chiuso.
-\item Per avviare il processo di regolazione, l’utente preme il pulsante B3.
-\item Il sistema rileva che il pulsante B3 è stato premuto.
-\item Ogni pressione del pulsante B3 incrementa la durata di 10 secondi.
-\item Se il tempo di lavoro è al massimo (120 secondi), premendo nuovamente B3, il tempo viene riportato a 10 secondi.
+    \item L’utente decide di regolare la durata delle fasi di apertura e chiusura del cancello;
+    \item L’utente si avvicina al cancello chiuso;
+    \item Per avviare il processo di regolazione, l’utente preme il pulsante B3;
+    \item Il sistema rileva che il pulsante B3 è stato premuto;
+    \item Il tempo per la regolazione delle fasi viene così gestito:
+    \begin{enumerate}
+        \item Se il tempo di chiusura automatica è inferiore a 120 secondi, ogni pressione del pulsante B3 aumenta il tempo di 10 secondi;
+        \item Se il tempo di chiusura automatica è già a 120 secondi, premendo nuovamente B3 il tempo viene riportato a 10 secondi. \\
+    \end{enumerate}
 \end{enumerate}
 
 
@@ -72,26 +82,30 @@ Questo scenario descrive passo dopo passo le azioni che l’utente compie per re
 
 
 \section{Gestione Stato e Ostacoli [Scenario 3]}
-Questo scenario, presentato in figura \ref{scenario3}, descrive passo dopo passo le azioni che l’utente compie per richiedere la riapertura automatica del cancello in presenza di un ostacolo. Nel seguito verrà presentato il flusso di azioni associato allo scenario corrente:
+\noindent Lo scenario attuale, ritratto in figura \ref{scenario3}, è anch'esso suddiviso in due sezioni differenti. \\
+
+La prima parte descrive in modo consecutivo le azioni relative alla riapertura automatica del cancello, attuata dal dispositivo, in presenza di un ostacolo.
+Di seguito è presentato il flusso di azioni associato allo scenario corrente. \\
 
 \noindent Riapertura Automatica con Rilevazione Ostacolo:
 
 \begin{enumerate}
-\item Il sistema rileva un ostacolo tramite il sensore di presenza (P1) durante la fase di chiusura del cancello.
-\item Il sistema avvia la riapertura automatica del cancello per evitare danni e garantire la sicurezza.
-\item Il dispositivo fornisce un feedback visivo in caso di apertura completa del cancello, accendendo tutti i LED (giallo, rosso e verde).
-\item Se il sistema non rileva alcun ostacolo procederà con la chiusura del cancello e l'attivazione del sensore di presenza P2.
+    \item Il sistema rileva un ostacolo tramite il sensore di presenza (P1) durante la fase di chiusura del cancello;
+    \item Il sistema avvia la riapertura automatica del cancello per evitare danni e garantire la sicurezza;
+    \item Il dispositivo fornisce un feedback visivo in caso di apertura completa del cancello, accendendo tutti i LED (giallo, rosso e verde);
+    \item Se il sistema non rileva alcun ostacolo procederà con la chiusura del cancello e l'attivazione del sensore di presenza P2.
 \end{enumerate}
 
-\noindent Gestione Richieste in presenza di ostacoli:
-Questo scenario descrive passo dopo passo le azioni che l’utente compie per gestire le richieste di apertura o chiusura del cancello in presenza di ostacoli. Nel seguito verrà presentato il flusso di azioni associato allo scenario corrente:
+La seconda parte descrive, invece, le azioni che l’utente compie per gestire le richieste di apertura o chiusura del cancello in presenza di ostacoli.
+Di seguito viene presentato il flusso di azioni associato allo scenario corrente. \\
 
+\noindent Gestione Richieste in Presenza di Ostacoli:
 
 \begin{enumerate}
-\item L’utente decide di attivare la funzione che fa ignorare le richieste di apertura o chiusura del cancello quando il sensore di presenza (P1) è attivo.
-\item Il sistema rileva la presenza di un ostacolo tramite il sensore P1.
-\item Il sistema ignora le richieste di apertura o chiusura del cancello per prevenire movimenti non sicuri.
-\item Il dispositivo fornisce un feedback visivo della presenza di un ostacolo, facendo lampeggiare il LED verde con una frequenza di 1 Hz per 30 secondi.
+    \item L’utente decide di attivare la funzione che fa ignorare le richieste di apertura o chiusura del cancello quando il sensore di presenza (P1) è attivo;
+    \item Il sistema rileva la presenza di un ostacolo tramite il sensore P1;
+    \item Il sistema ignora le richieste di apertura o chiusura del cancello per prevenire movimenti non sicuri;
+    \item Il dispositivo fornisce un feedback visivo della presenza di un ostacolo, facendo lampeggiare il LED verde con una frequenza di 1 Hz per 30 secondi.
 \end{enumerate}
 
 
@@ -104,15 +118,16 @@ Questo scenario descrive passo dopo passo le azioni che l’utente compie per ge
 
 
 \section{Stato di Errore [Scenario 4]}
-Questo scenario, presentato in figura \ref{scenario4}, descrive passo dopo passo le azioni che l’utente compie per far entrare il dispositivo in uno stato di errore in caso di malfunzionamento del sensore di presenza (P2). Nel seguito verrà presentato il flusso di azioni associato allo scenario corrente:
+Questo scenario, riprodotto in figura \ref{scenario4}, descrive in modo seriale le azioni che l’utente compie per far entrare il dispositivo in uno stato di errore in caso di malfunzionamento del sensore di presenza (P2).
+Di seguito viene presentato il flusso di azioni associato allo scenario corrente. \\
 
-\noindent Stato di errore con rilevazione malfunzionamento del sensore:
+\noindent Stato di Errore con Rilevazione Malfunzionamento del Sensore:
 
 \begin{enumerate}
-\item L’utente richiede la chiusura del cancello tramite il pulsante B1
-\item Il sistema rileva che il sensore di presenza (P2) non si è attivato dopo il tempo di lavoro previsto durante la fase di chiusura del cancello.
-\item Il sistema entra in uno stato di errore per avvisare l’utente del possibile malfunzionamento del sensore.
-\item Il dispositivo fornisce un feedback visivo dello stato di errore, accendendo il LED rosso se il cancello non si chiude entro 10 secondi dal completamento del tempo di lavoro.
+    \item L’utente richiede la chiusura del cancello tramite il pulsante B1;
+    \item Il sistema rileva che il sensore di presenza (P2) non si è attivato dopo il tempo di lavoro previsto durante la fase di chiusura del cancello;
+    \item Il sistema entra in uno stato di errore per avvisare l’utente del possibile malfunzionamento del sensore;
+    \item Il dispositivo fornisce un feedback visivo dello stato di errore, accendendo il LED rosso se il cancello non si chiude entro 10 secondi dal completamento del tempo di lavoro.
 \end{enumerate}
 
 \begin{figure}[H]
@@ -123,16 +138,17 @@ Questo scenario, presentato in figura \ref{scenario4}, descrive passo dopo passo
 \end{figure}
 
 
-\section{Chiusura automatica all'accensione [Scenario 5]}
-Questo scenario, presentato in Figura 2.7, descrive passo dopo passo le azioni che l’utente compie per richiedere la chiusura automatica del cancello all'accensione del dispositivo. Nel seguito verrà presentato il flusso di azioni associato allo scenario corrente:
+\section{Chiusura Automatica all'accensione [Scenario 5]}
+Questo scenario, rappresentato in figura 2.7, descrive in successione le azioni che l’utente compie per richiedere la chiusura automatica del cancello all'accensione del dispositivo.
+Nell'elenco sottostante è presentato il flusso di azioni associato allo scenario corrente. \\
 
-\noindent Chiusura automatica all'accensione del dispositivo:
+\noindent Chiusura Automatica all'Accensione del Dispositivo:
 
 \begin{enumerate}
-\item L’utente accende il dispositivo per la prima volta.
-\item Il sistema verifica che i sensori di presenza P1 e P2 non siano attivi.
-\item Il sistema avvia la procedura di chiusura del cancello.
-\item Il dispositivo garantisce la corretta chiusura del cancello all'accensione.
+    \item L’utente accende il dispositivo per la prima volta;
+    \item Il sistema verifica che i sensori di presenza P1 e P2 non siano attivi;
+    \item Il sistema avvia la procedura di chiusura del cancello;
+    \item Il dispositivo garantisce la corretta chiusura del cancello all'accensione.
 \end{enumerate}
 
 
