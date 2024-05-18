@@ -1,0 +1,205 @@
+\chapter{\bf{User Stories}}
+
+\section{US1 - Apertura Cancello}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} premere il pulsante B1 quando il cancello è chiuso o in chiusura, \\
+    \textbf{al fine di} avviare la fase di apertura del cancello.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato che} il cancello è chiuso o in fase di chiusura, \\
+    \textbf{quando} premo il pulsante B1, \\
+    \textbf{allora} il cancello deve iniziare la fase di apertura.
+\end{tcolorbox}
+
+\section{US2 - Chiusura Cancello}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} premere il pulsante B1 quando il cancello è in apertura o aperto, \\
+    \textbf{al fine di} avviare la fase di chiusura del cancello.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato che} il cancello è aperto o in fase di apertura, \\
+    \textbf{quando} premo il pulsante B1, \\
+    \textbf{allora} il cancello deve iniziare la fase di chiusura.
+\end{tcolorbox}
+
+\section{US3 - Regolazione Tempo Chiusura Automatica}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} regolare il tempo di chiusura automatica del cancello premendo il pulsante B2 quando il cancello è chiuso, \\
+    \textbf{al fine di} impostare dopo quanto tempo dall’apertura il cancello deve richiudersi.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione \#1}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato che} il cancello è chiuso, \\
+    \textbf{quando} premo il pulsante B2, \\
+    \textbf{se} il tempo di chiusura automatica è inferiore a 120 secondi, \\
+    \textbf{allora} il tempo di chiusura automatica aumenta di 10 secondi.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione \#2}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato che} il cancello è chiuso, \\
+    \textbf{quando} premo il pulsante B2, \\
+    \textbf{se} il tempo di chiusura automatica è a 120 secondi, \\
+    \textbf{allora} il tempo di chiusura automatica ritorna a 10 secondi.
+\end{tcolorbox}
+
+\section{US4 - Regolazione Tempo Lavoro}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} regolare la durata delle fasi di apertura e chiusura del cancello premendo il pulsante B3 quando il cancello è chiuso, \\
+    \textbf{al fine di} impostare la durata delle fasi di apertura e chiusura del cancello.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione \#1}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato che} il cancello è chiuso, \\
+    \textbf{quando} premo il pulsante B3, \\
+    \textbf{se} il tempo di lavoro è inferiore a 120 secondi, \\
+    \textbf{allora} il tempo di lavoro aumenta di 10 secondi.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione \#2}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato che} il cancello è chiuso, \\
+    \textbf{quando} premo il pulsante B3, \\
+    \textbf{se} il tempo di lavoro è 120 secondi, \\
+    \textbf{allora} il tempo di lavoro ritorna a 10 secondi.
+\end{tcolorbox}
+
+\section{US5 - Riapertura Automatica con Rilevazione Ostacolo}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} che il cancello si riapra automaticamente se viene rilevata la presenza di un ostacolo durante la fase di chiusura, \\
+    \textbf{in modo da} evitare danni al cancello e garantire la sicurezza delle persone e degli oggetti presenti.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato che} il cancello è in fase di chiusura, \\
+    \textbf{quando} il sensore di presenza (P1) rileva un ostacolo, \\
+    \textbf{allora} il cancello si riapre automaticamente.
+\end{tcolorbox}
+
+\section{US6 - Gestione Sicura del Cancello in Presenza di Ostacoli}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} che il dispositivo ignori le richieste di apertura o chiusura del cancello quando il sensore di presenza è attivo, \\
+    \textbf{in modo da} prevenire movimenti non sicuri del cancello in presenza di ostacoli o persone.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione \#1}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato che} il sensore di presenza (P1) è attivo, \\
+    \textbf{quando} c'è una richiesta di apertura o chiusura del cancello, \\
+    \textbf{allora} il dispositivo non esegue l'azione richiesta.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione \#2}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato che} il sensore di presenza (P1), \\
+    \textbf{quando} non rileva più alcun ostacolo, \\
+    \textbf{allora} il dispositivo è nuovamente pronto a ricevere e gestire le richieste di apertura o chiusura del cancello..
+\end{tcolorbox}
+
+\section{US7 - Gestione del sensore di chiusura per determinare lo stato del cancello}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} che il dispositivo utilizzi il sensore di presenza (P2) come sensore di chiusura del cancello\\
+    \textbf{in modo da} determinare in modo affidabile lo stato del cancello.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato che} il cancello è chiuso, \\
+    \textbf{quando} il sensore di presenza (P2) è attivo, \\
+    \textbf{allora} il cancello si considera chiuso.
+\end{tcolorbox}
+
+\section{US8 - Errore in caso di malfunzionamento del sensore di chiusura}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente\\
+    \textbf{voglio} che il dispositivo entri in uno stato di errore se il sensore di chiusura (P2) non si attiva dopo il tempo di lavoro previsto durante la fase di chiusura del cancello,\\
+    \textbf{in modo da} essere avvisato in caso di malfunzionamento del sensore.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato che} è in corso la fase di chiusura del cancello, \\
+    \textbf{quando} il sensore di chiusura (P2) non si attiva entro il tempo di lavoro previsto, \\
+    \textbf{allora} il dispositivo entra in uno stato di errore.
+\end{tcolorbox}
+
+\section{US9 - Avvio Chiusura Cancello senza Sensore Attivo}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} che il dispositivo avvii la procedura di chiusura del cancello quando viene acceso, se il sensore di chiusura (P2) e il sensore di presenza (P1) non sono attivi, \\
+    \textbf{in modo da} garantire la chiusura corretta del cancello all'accensione.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato che} il dispositivo è acceso, \\
+    \textbf{quando} il sensore di chiusura (P2) e il sensore di presenza (P1) non sono attivi, \\
+    \textbf{allora} viene avviata la procedura di chiusura del cancello.
+\end{tcolorbox}
+
+\section{US10 - Indicazione del Cancello in Movimento}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} che il LED giallo lampeggi mentre il cancello è in apertura o in chiusura, \\
+    \textbf{al fine di} avere una conferma visiva dello stato di movimento.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato} che il cancello è in fase di apertura o chiusura, \\
+    \textbf{quando} il cancello si muove, \\
+    \textbf{allora} il LED giallo lampeggia con una frequenza di 0,5 Hz.
+\end{tcolorbox}
+
+\section{US11 - Indicazione di Errore di Chiusura}
+    \begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} che il LED rosso si accenda se il cancello non si chiude entro 10 secondi dal completamento del tempo di lavoro, \\
+    \textbf{al fine di} essere notificato di uno stato di errore.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato} che il cancello è in fase di chiusura, \\
+    \textbf{quando} il cancello non si chiude entro 10 secondi dal completamento del tempo di lavoro, \\
+    \textbf{allora} il LED rosso si accende per notificare lo stato di errore.
+\end{tcolorbox}
+
+\section{US12 - Indicazione di Ostacolo}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} che il LED verde lampeggi se un ostacolo è presente davanti al sensore P1 quando si richiede l'apertura o la chiusura, \\
+    \textbf{al fine di} essere notificato della presenza di un ostacolo.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato} che il cancello è completamente aperto o chiuso, \\
+    \textbf{quando} un ostacolo è presente davanti al sensore P1 e si richiede l'apertura o la chiusura del cancello, \\
+    \textbf{allora} il LED verde lampeggia con una frequenza di 1 Hz per 30 secondi.
+\end{tcolorbox}
+
+\section{US13 - Indicazione Cancello Chiuso}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} che tutti i LED siano spenti quando il cancello è chiuso, \\
+    \textbf{al fine di} avere una conferma visiva che il cancello è completamente chiuso.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato} che la procedura di chiusura del cancello è attiva, \\
+    \textbf{quando} il cancello è completamente chiuso, \\
+    \textbf{allora} tutti i LED sono spenti.
+\end{tcolorbox}
+
+\section{US14 - Indicazione Cancello Aperto}
+\begin{tcolorbox}[title={Descrizione}, colback=red!20!white, colframe=red!80!black]
+    \textbf{Come} utente, \\
+    \textbf{voglio} che tutti i LED siano accesi senza lampeggiare quando il cancello è aperto, \\
+    \textbf{al fine di} avere una conferma visiva che il cancello è completamente aperto.
+\end{tcolorbox}
+
+\begin{tcolorbox}[title={Criterio di Accettazione}, colback=blue!20!white, colframe=blue!80!black]
+    \textbf{Dato} che la procedura di apertura del cancello è attiva, \\
+    \textbf{quando} il cancello è completamente aperto, \\
+    \textbf{allora} tutti i LED sono accesi senza lampeggiare.
+\end{tcolorbox}
