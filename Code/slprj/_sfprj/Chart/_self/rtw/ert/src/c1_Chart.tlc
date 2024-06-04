@@ -1,0 +1,249 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   33 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "TC"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "TC"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "TL"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "TL"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Var_Inattivo"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Var_Inattivo"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Var_Chiuso"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Var_Chiuso"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "Var_Aperto"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "Var_Aperto"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c1_Chart"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_c1_Chart"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_Cancello"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "LOGIC.Cancello"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Cancello"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.Cancello"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Apertura"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.Cancello.Apertura"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_In_Apertura"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.Cancello.Apertura.In_Apertura"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Chiusura"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.Cancello.Chiusura"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Errore"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.Cancello.Chiusura.Errore"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_In_Errore"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.Cancello.Chiusura.Errore.In_Errore"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_In_Chiusura"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.Cancello.Chiusura.In_Chiusura"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_Regolazione_Tempo_Lavoro"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "LOGIC.Regolazione_Tempo_Lavoro"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Regolazione_Tempo_Lavoro"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.Regolazione_Tempo_Lavoro"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_Ostacolo"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "LOGIC.Ostacolo"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Ostacolo"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.Ostacolo"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Ostacolo_Presente"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.Ostacolo.Ostacolo_Presente"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_BUTTON1"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "LOGIC.BUTTON1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_BUTTON1"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.BUTTON1"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_BUTTON3"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "LOGIC.BUTTON3"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_BUTTON3"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.BUTTON3"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_BUTTON2"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "LOGIC.BUTTON2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_BUTTON2"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.BUTTON2"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_Regolazione_Tempo_Chiusura"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "LOGIC.Regolazione_Tempo_Chiusura"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_Regolazione_Tempo_Chiusura"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LOGIC.Regolazione_Tempo_Chiusura"\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i1"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i2"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i3"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "temporalCounter_i4"\
+      Description  "TemporalCounter"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
