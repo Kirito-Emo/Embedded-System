@@ -12,6 +12,16 @@
 \usepackage[hidelinks]{hyperref}
 \setlength{\parindent}{1cm}
 \usepackage{tcolorbox}
+\usepackage{makecell}
+\usepackage{listings}
+\usepackage{minted}
+\usemintedstyle{manni}
+
+% Definizione dell'ambiente lstlisting per il codice sorgente
+\lstnewenvironment{code}[1][]%
+    {\minipage{\linewidth} 
+    \lstset{basicstyle=\ttfamily\footnotesize,frame=single,#1}}
+    {\endminipage}
 
 \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ \uppercase{#1}}{}}
@@ -73,9 +83,7 @@
         
         %Anno Accademico
         \centering{\large \uppercase{ Anno Accademico 2023/2024 }}
-    
     \end{titlepage}
-
 
     %Corpo della Tesi
     \tableofcontents
@@ -88,7 +96,10 @@
     \input{Sections/2 - UseCases}
     \input{Sections/3 - ActivityDiagrams}
     \input{Sections/4 - StateDiagrams}
+    \input{Sections/5 - Modellazione}
+    \input{Sections/6 - Test}
+    \input{Sections/7 - Codice}
     \clearpage
-    \input{Sections/5 - Lista Figure}
+    \input{Sections/Lista Figure}
 
 \end{document}
